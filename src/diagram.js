@@ -3,7 +3,9 @@ import {transition} from "d3-transition";
 
 import {venn, lossFunction, normalizeSolution, scaleSolution} from "./layout";
 import {intersectionArea, distance, getCenter} from "./circleintersection";
-import {nelderMead} from "fmin";
+import fmin from "fmin";
+
+const {nelderMead} = fmin;
 
 /*global console:true*/
 
