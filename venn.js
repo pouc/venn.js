@@ -1210,6 +1210,7 @@
 
         if ((xRange.max == xRange.min) ||
             (yRange.max == yRange.min)) {
+            // eslint-disable-next-line no-undef
             console.log("not scaling solution: zero size detected");
             return solution;
         }
